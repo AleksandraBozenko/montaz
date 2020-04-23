@@ -27,9 +27,52 @@
     />
 
     <link rel="stylesheet" href="css/main.css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,400,700&display=swap" rel="stylesheet">
   </head>
   <body>
-    <h1>Hello world - with simple PWA support!</h1>
+    <main class="main">
+      <div class="navigation" id="homeSection">
+        <div class="menu">
+          <ul class="menu__list">
+            <a class="menu__list--link" href="#homeSection" ><li class="menu__list--link-item">STRONA GŁÓWNA</li></a>
+            <a class="menu__list--link" href="#skillsSection" ><li class="menu__list--link-item">O MNIE</li></a>
+            <a class="menu__list--link" href="#projectsSection" ><li class="menu__list--link-item">GALERIA</li></a>
+            <a class="menu__list--link" href="#contactSection" ><li class="menu__list--link-item">KONTAKT</li></a>
+          </ul>
+        </div>
+        <div class="navigation__hamburger">
+          <button class="navigation__hamburger--button">
+            <img class="navigation__hamburger--button-img" src="assets/img/hamburger.png" alt="hamburger menu">
+          </button>
+        </div>
+      </div>
+      <div class="nav">
+        <div class="nav__navigation">
+        <div class="nav__cross">
+          <button class="nav__cross--button">
+            <img class="nav__cross--button-img" src="assets/img/close.svg" alt="cross">
+          </button>
+        </div>  
+      </div>
+        <ul class="nav__list">
+          <a class="nav__list--link" id="home" href="#homeSection" ><li class="nav__list--link-item">STRONA GŁÓWNA</li></a>
+          <a class="nav__list--link" id="skills" href="#skillsSection" ><li class="nav__list--link-item">O MNIE</li></a>
+          <a class="nav__list--link" id="projects" href="#projectsSection" ><li class="nav__list--link-item">GALERIA</li></a>
+          <a class="nav__list--link" id="contact" href="#contactSection" ><li class="nav__list--link-item">KONTAKT</li></a>
+        </ul>
+      </div>
+      <header class="header">
+        <div class="header__box">
+        <h1 class="header__box--title">Front - End<br>Developer</h1>  
+        <p class="header__box--text">ALEKSANDRA BOŻENKO</p>
+        <a class="header__box--link" href="#skillsSection">
+        <button class="header__box--button">
+          <p class="header__box--button-text">GET MORE</p>
+        </button>
+      </a>
+      </div>
+      </header>
+    </main>
 
     <script src="js/main.js"></script>
   </body>

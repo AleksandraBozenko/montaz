@@ -4,8 +4,149 @@
 
 html {
   box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  scroll-behavior: smooth;
 }
 
 *, *:before, *:after {
   box-sizing: inherit;
+}
+.main{
+  width: 100%;
+}
+.navigation{
+  width: 100%;
+  height: 80px;
+  background: $orange;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  // position: sticky;
+  // top: 0;
+  // z-index: 10;
+  &__hamburger{
+    width: 110px;
+    height: 50px;
+    &--button{
+      width: 100%;
+      height: 100%;
+      border: none;
+      background: none;
+      &-img{
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+}
+.navigation--js{
+  display: none;
+}
+.menu{
+  display: none;
+  height: 100%;
+  &__list{
+    list-style: none;
+    @include center;
+    &--link{
+      text-decoration: none;
+      color: $white;
+      &-item{
+        letter-spacing: 3px;
+        padding: 15px;
+      }
+    }
+  }
+}
+.nav{
+  width: 100%;
+  height: 100vh;
+  display: none;
+  &__list{
+    list-style: none;
+    margin-top: 50px;
+    &--link{
+      text-decoration: none;
+      color: $black;
+      &-item{
+        padding: 30px;
+        font-size: 1.3em;
+        text-align: center;
+        letter-spacing: 3px;
+      }
+    }
+  }
+  &__navigation{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+  }
+  &__cross{
+    width: 90px;
+    height: 50px;
+    margin-top: 30px;
+    &--button{
+      width: 100%;
+      height: 100%;
+      border: none;
+      background: none;
+      &-img{
+        width: 70%;
+        height: 70%;
+      }
+    }
+  }
+}
+.nav--js{
+  display: block;
+}
+.header{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.712), rgba(0, 0, 0, 0.512)), url(/assets/img/bg.jpg);
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  color: $white;
+  @include center;
+  &__box{
+    height: 100%;
+    @include center;
+    flex-direction: column;
+    &--title{
+      font-size: 3em;
+      font-weight: 100;
+      font-family: 'Raleway', sans-serif;
+    }
+    &--text{
+      letter-spacing: 3px;
+      font-size: .8em;
+      font-weight: 900;
+      margin: 0;
+    }
+    &--button{
+      border: 1px solid $white;
+      background: none;
+      padding: 15px;
+      margin-top: 60px;
+      &-text{
+        color: $white;
+        letter-spacing: 3px;
+        margin: 0;
+        font-weight: 100;
+        font-size: .8em;
+      }
+    }
+  }
+}
+@media(min-width: 700px){
+  .navigation{
+    &__hamburger{
+      display: none;
+    }
+  }
+  .menu{
+    display: block;
+  }
 }

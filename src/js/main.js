@@ -14,9 +14,50 @@ if ('serviceWorker' in navigator) {
   });
 }
 
-// Niżej możesz pisać.
+// Hamburger menu
+
+const hamburger = document.querySelector('.navigation__hamburger--button');
+const navigation = document.querySelector('.navigation');
+
+const cross = document.querySelector('.nav__cross--button');
+const nav = document.querySelector('.nav');
+
+hamburger.addEventListener('click', (e) =>{
+  nav.classList.toggle('nav--js');
+  navigation.classList.toggle('navigation--js');
+})
+
+cross.addEventListener('click', (e) =>{
+  nav.classList.toggle('nav--js');
+  navigation.classList.toggle('navigation--js');
+})
+
+// Nav options
+
+const home = document.getElementById('home');
+const skills = document.getElementById('skills');
+const projects = document.getElementById('projects');
+const contact = document.getElementById('contact');
 
 
-console.log(`Hello world!`);
+home.addEventListener('click', (e) =>{
+  nav.classList.toggle('nav--js');
+  navigation.classList.toggle('navigation--js');
+})
+
+skills.addEventListener('click', (e) =>{
+  nav.classList.toggle('nav--js');
+  navigation.classList.toggle('navigation--js');
+})
+
+projects.addEventListener('click', (e) =>{
+  nav.classList.toggle('nav--js');
+  navigation.classList.toggle('navigation--js');
+})
+
+contact.addEventListener('click', (e) =>{
+  nav.classList.toggle('nav--js');
+  navigation.classList.toggle('navigation--js');
+})
 
 
