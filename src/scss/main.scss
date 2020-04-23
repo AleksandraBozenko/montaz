@@ -177,7 +177,39 @@ html {
     }
   }
 }
-
+.contact{
+  @include center;
+  flex-direction: column;
+  width: 100%;
+  background: $light;
+  color: $lighter;
+  &__title{
+    color: $red;
+    font-weight: normal;
+    letter-spacing: 3px;
+    padding: 1rem;
+  }
+  &__info{
+    &--text{
+      text-align: center;
+    }
+  }
+  &__socials{
+    &--item{
+      padding: .5rem 0;
+      @include center;
+      &-text{
+        width: 10rem;
+        height: 1rem;
+        padding-left: 1rem;
+      }
+      &-img{
+        width: 2rem;
+        height: 2rem;
+      }
+    }
+  }
+}
 @media(min-width: 700px){
   .navigation{
     &__hamburger{
@@ -196,6 +228,20 @@ html {
   .about{
     &__box{
       grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+  }
+  .contact{
+    &__content{
+      @include center;
+      flex-direction: row;
+      width: 100%;
+    }
+    &__info{
+      // margin-right: 1rem;
+      width: 25rem;
+    }
+    &__socials{
+      width: 25rem;
     }
   }
 }
