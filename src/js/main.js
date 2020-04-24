@@ -60,4 +60,17 @@ contact.addEventListener('click', (e) =>{
   navigation.classList.toggle('navigation--js');
 })
 
-
+const msnry = new Macy({
+  container: '.gallery__box',
+  mobileFirst: true,
+  columns: 1,
+  breakAt: {
+    500: 2,
+    700: 3,
+    1100: 4,
+  },
+  // margin: {
+  //   x: 20,
+  //   y: 5,
+  // }
+})
