@@ -11,6 +11,9 @@ html {
 *, *:before, *:after {
   box-sizing: inherit;
 }
+a{
+  text-decoration: none;
+}
 .main{
   width: 100%;
 }
@@ -128,6 +131,7 @@ html {
     background: $red;
     border: none;
     padding: 1rem;
+    cursor: pointer;
     // margin-top: 60px;
     &--text{
       color: $white;
@@ -154,6 +158,7 @@ html {
     width: 70%;
     text-align: center;
     line-height: 1.3rem;
+    padding: 1rem;
   }
   &__box{
     display: grid;
@@ -246,6 +251,7 @@ html {
     }
   }
   .about{
+    padding: 3rem;
     &__box{
       grid-template-columns: 1fr 1fr 1fr 1fr;
     }
